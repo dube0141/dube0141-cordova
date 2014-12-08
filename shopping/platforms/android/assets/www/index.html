@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="jquery.mobile-1.4.5/jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="content">
+            <div id="head" data-role="header" data-position="fixed">
+                <a href="#popup-outside-page" class="ui-btn-right" id="clear">Clear</a>
+                <h1>Shopping Cart</h1>
+            </div>
+
+            <div data-role="controlgroup" id="group"></div>
+            <p id="tip" style="text-align:center; opacity:0.6"><strong>Tip:</strong><br>Tap and hold items to delete them.</p>
+
+            <footer data-role="footer" data-position="fixed">
+                <form id="form" style="text-align: center">
+                    <p class="output"></p>
+                    <div style="margin-left:2%;margin-right:2%;">
+                        <input type="text" name="item" id="item" placeholder="enter new item" />
+                    </div>
+                    <input id="add" class="add" data-role="button" type="button" value="&nbsp;&nbsp;&nbsp;ADD&nbsp;&nbsp;&nbsp;">
+                </form>
+            </footer>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
